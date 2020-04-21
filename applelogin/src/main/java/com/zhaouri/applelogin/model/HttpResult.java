@@ -13,7 +13,8 @@ public class HttpResult {
     private String msg;
     private Object data;
 
-    public HttpResult() { }
+    public HttpResult() {
+    }
 
     public HttpResult(Integer code, String msg, Object data) {
         this.code = code;

@@ -47,7 +47,7 @@ public class HomeController {
 
     /***
      * 苹果登录校验
-     * 
+     *
      * @param jwt 苹果票据 很长很长的一串
      * @param aud iOS包名 eg:com.xxx.xxx
      * @param sub 苹果对应的唯一用户标识
@@ -57,7 +57,7 @@ public class HomeController {
     @RequestMapping(value = "/appleVerify")
     @ResponseBody
     public HttpResult appleVerify(@RequestParam("jwt") final String jwt, @RequestParam("aud") final String aud,
-            @RequestParam("sub") final String sub) {
+                                  @RequestParam("sub") final String sub) {
 
         final HttpResult httpResult = new HttpResult();
 
@@ -146,7 +146,7 @@ public class HomeController {
 
     /**
      * 从hex string生成公钥
-     * 
+     *
      * @param stringN
      * @param stringE
      * @return 构造好的公钥
